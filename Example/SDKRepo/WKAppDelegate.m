@@ -7,7 +7,7 @@
 //
 
 #import "WKAppDelegate.h"
-
+#import <SDKRepo/TESTDataManager.h>
 @implementation WKAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions

@@ -1,0 +1,6 @@
+framework module SDKRepo {
+  umbrella header "SDKRepo-umbrella.h"
+
+  export *
+  module * { export * }
+}

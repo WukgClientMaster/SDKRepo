@@ -24,7 +24,7 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/WukgClientMaster/SDKRepo'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'WukgClientMaster' => 'wukegao@hxdi.com' }
+  s.author           = { 'WukgClientMaster' => 'WKG160100@163.com' }
   s.source           = { :git => 'https://github.com/WukgClientMaster/SDKRepo.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
@@ -32,11 +32,12 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'SDKRepo/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'SDKRepo' => ['SDKRepo/Assets/*.png']
-  # }
+   s.resource_bundles = {
+     'SDKRepo' => ['SDKRepo/Assets/*.png']
+   }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+   s.public_header_files = 'SDKRepo/Classes/Public/**/*.h'
+   s.frameworks = 'UIKit', 'SystemConfiguration'
+   s.dependency 'AFNetworking', '~> 2.3'
+   s.dependency 'Masonry', '~> 1.1.0'
 end
