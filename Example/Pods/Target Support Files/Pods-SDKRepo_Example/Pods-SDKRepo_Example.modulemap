@@ -1,6 +1,0 @@
-framework module Pods_SDKRepo_Example {
-  umbrella header "Pods-SDKRepo_Example-umbrella.h"
-
-  export *
-  module * { export * }
-}
