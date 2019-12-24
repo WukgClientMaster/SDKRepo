@@ -44,8 +44,14 @@ TODO: Add long description of the pod here.
           "AdSupport",
           "SystemConfiguration",
   ]
-   #s.public_header_files = 'SDKRepo/Classes/Public/**/*.h'
-   #s.frameworks = 'UIKit', 'SystemConfiguration'
+
+   s.public_header_files = 'Framework/TransnSDK.framework/Headers/*.h'
+   s.libraries = [
+   "c++",
+   ]
+   s.dependency 'XMPPFramework'
+   s.dependency 'AgoraAudio_iOS'
+   s.dependency 'CoreDataEnvir'
    #s.dependency 'AFNetworking', '~> 2.3'
    #s.dependency 'Masonry', '~> 1.1.0'
 
