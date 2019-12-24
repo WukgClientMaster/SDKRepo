@@ -1,6 +1,0 @@
-framework module TransnSDK {
-  umbrella header "TransnSDK-umbrella.h"
-
-  export *
-  module * { export * }
-}

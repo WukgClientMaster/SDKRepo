@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SDKRepo'
-  s.version          = '0.1.0'
+  s.version          = '1.0.0'
   s.summary          = 'A short description of SDKRepo.'
 
 # This description is used to generate tags and improve search results.
@@ -25,11 +25,12 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'WukgClientMaster' => 'WKG160100@163.com' }
-  s.source           = { :git => 'https://github.com/WukgClientMaster/SDKRepo.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/WukgClientMaster/SDKRepo.git'}
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
-  s.vendored_frameworks = 'TransnSDK.framework'
+  s.preserve_paths = 'Framework/TransnSDK.framework'
+  s.vendored_frameworks = 'Framework/TransnSDK.framework'
   s.frameworks = [
           "AVFoundation",
           "AudioToolbox",
@@ -43,7 +44,6 @@ TODO: Add long description of the pod here.
           "AdSupport",
           "SystemConfiguration",
   ]
-
    #s.public_header_files = 'SDKRepo/Classes/Public/**/*.h'
    #s.frameworks = 'UIKit', 'SystemConfiguration'
    #s.dependency 'AFNetworking', '~> 2.3'
